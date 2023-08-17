@@ -10,15 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
+        
         VStack {
             
             NavigationView {
                 ZStack {
-                    Image("nightingale_bg")
-                        .resizable()
-                        .scaledToFill()
-                        .ignoresSafeArea(.all)
-                    
+                    AnimatedBackground().edgesIgnoringSafeArea(.all)
+                        .blur(radius: 10)
+
                     Image("nightingale_logo")
                         .resizable()
                         .imageScale(.medium)
@@ -27,22 +26,23 @@ struct ContentView: View {
                     HStack(alignment: .center, spacing: 6.0) {
                         NavigationLink(destination: MusicLibraryView()) {
                             Image(systemName: "music.note.house.fill")
-                                .imageScale(.large)
+//                                .resizable()
+//                                .scaledToFit()
+//                                .imageScale(.small)
                                 .frame(width: 90, height: 90)
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
-                                .cornerRadius(30)
+                                .cornerRadius(35)
                                 .shadow(radius: 10)
-                                
-                                
                         }
                         NavigationLink(destination: MusicLibraryView()) {
                             Image(systemName: "music.note.list")
-                                .imageScale(.large)
+//                                .resizable()
+                                .imageScale(.small)
                                 .frame(width: 90, height: 90)
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
-                                .cornerRadius(30)
+                                .cornerRadius(35)
                                 .shadow(radius: 10)
                         }
                         NavigationLink(destination: MusicProductionView()) {
@@ -51,7 +51,7 @@ struct ContentView: View {
                                 .frame(width: 90, height: 90)
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
-                                .cornerRadius(30)
+                                .cornerRadius(35)
                                 .shadow(radius: 10)
                         }
                         NavigationLink(destination: ProfileView()) {
@@ -60,20 +60,38 @@ struct ContentView: View {
                                 .frame(width: 90, height: 90)
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
-                                .cornerRadius(30)
+                                .cornerRadius(35)
                                 .shadow(radius: 10)
                         }
                     }
-                    
-//                    .frame(width: UIScreen.main.bounds.width, height: 120)
-//                .background(Color.black)
-//                .cornerRadius(15)
+                    .frame(width: UIScreen.main.bounds.width, height: 120)
+                    .background(Color.gray)
+                    .offset(y: 360)
+                }
             }
-            }
-                    
-            
         }
         
+    }
+}
+
+struct AnimatedBackground: View {
+    @State var start = UnitPoint(x: 0, y: -2)
+    @State var end = UnitPoint(x: 4, y: 0)
+    
+    let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
+    let colors = [Color.green, Color.black, Color.purple, Color.teal]
+    
+    var body: some View {
+        
+        LinearGradient(gradient: Gradient(colors: colors), startPoint: start, endPoint: end)
+            .animation(Animation.easeInOut(duration: 6).repeatForever())
+            .onReceive(timer, perform: { _ in
+                
+                self.start = UnitPoint(x: 4, y: 0)
+                self.end = UnitPoint(x: 0, y: 2)
+                self.start = UnitPoint(x: -4, y: 20)
+                self.start = UnitPoint(x: 4, y: 0)
+            })
     }
 }
 
