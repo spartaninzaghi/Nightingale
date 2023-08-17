@@ -16,7 +16,7 @@ struct ContentView: View {
             NavigationView {
                 ZStack {
                     AnimatedBackground().edgesIgnoringSafeArea(.all)
-                        .blur(radius: 10)
+                        .blur(radius: 0)
 
                     Image("nightingale_logo")
                         .resizable()
