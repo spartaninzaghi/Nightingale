@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE9811702A8BEF85007DD34F /* NightingaleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98116F2A8BEF85007DD34F /* NightingaleApp.swift */; };
+		EE9811722A8BEF85007DD34F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9811712A8BEF85007DD34F /* ContentView.swift */; };
+		EE9811742A8BEF86007DD34F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9811732A8BEF86007DD34F /* Assets.xcassets */; };
+		EE9811782A8BEF86007DD34F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9811772A8BEF86007DD34F /* Preview Assets.xcassets */; };
+		EE9811822A8BEF86007DD34F /* NightingaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9811812A8BEF86007DD34F /* NightingaleTests.swift */; };
+		EE98118C2A8BEF86007DD34F /* NightingaleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98118B2A8BEF86007DD34F /* NightingaleUITests.swift */; };
+		EE98118E2A8BEF86007DD34F /* NightingaleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98118D2A8BEF86007DD34F /* NightingaleUITestsLaunchTests.swift */; };
+		EE98119B2A8BF53D007DD34F /* MusicLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98119A2A8BF53D007DD34F /* MusicLibraryView.swift */; };
+		EE98119D2A8BF9AC007DD34F /* MusicProductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98119C2A8BF9AC007DD34F /* MusicProductionView.swift */; };
+		EE98119F2A8BF9C7007DD34F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98119E2A8BF9C7007DD34F /* ProfileView.swift */; };
+		EE9811A12A8C0D8A007DD34F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9811A02A8C0D8A007DD34F /* RegisterView.swift */; };
+		EE9811A32A8C0E65007DD34F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9811A22A8C0E65007DD34F /* SignUpView.swift */; };
+		EE9811A52A8C0E70007DD34F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9811A42A8C0E70007DD34F /* WelcomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE98117E2A8BEF86007DD34F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE9811642A8BEF85007DD34F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE98116B2A8BEF85007DD34F;
+			remoteInfo = Nightingale;
+		};
+		EE9811882A8BEF86007DD34F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE9811642A8BEF85007DD34F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE98116B2A8BEF85007DD34F;
+			remoteInfo = Nightingale;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE98116C2A8BEF85007DD34F /* Nightingale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightingale.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE98116F2A8BEF85007DD34F /* NightingaleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightingaleApp.swift; sourceTree = "<group>"; };
+		EE9811712A8BEF85007DD34F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE9811732A8BEF86007DD34F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE9811752A8BEF86007DD34F /* Nightingale.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nightingale.entitlements; sourceTree = "<group>"; };
+		EE9811772A8BEF86007DD34F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE98117D2A8BEF86007DD34F /* NightingaleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightingaleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9811812A8BEF86007DD34F /* NightingaleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightingaleTests.swift; sourceTree = "<group>"; };
+		EE9811872A8BEF86007DD34F /* NightingaleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightingaleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE98118B2A8BEF86007DD34F /* NightingaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightingaleUITests.swift; sourceTree = "<group>"; };
+		EE98118D2A8BEF86007DD34F /* NightingaleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightingaleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE98119A2A8BF53D007DD34F /* MusicLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLibraryView.swift; sourceTree = "<group>"; };
+		EE98119C2A8BF9AC007DD34F /* MusicProductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicProductionView.swift; sourceTree = "<group>"; };
+		EE98119E2A8BF9C7007DD34F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		EE9811A02A8C0D8A007DD34F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		EE9811A22A8C0E65007DD34F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		EE9811A42A8C0E70007DD34F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE9811692A8BEF85007DD34F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE98117A2A8BEF86007DD34F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9811842A8BEF86007DD34F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE9811632A8BEF85007DD34F = {
+			isa = PBXGroup;
+			children = (
+				EE98116E2A8BEF85007DD34F /* Nightingale */,
+				EE9811802A8BEF86007DD34F /* NightingaleTests */,
+				EE98118A2A8BEF86007DD34F /* NightingaleUITests */,
+				EE98116D2A8BEF85007DD34F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE98116D2A8BEF85007DD34F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE98116C2A8BEF85007DD34F /* Nightingale.app */,
+				EE98117D2A8BEF86007DD34F /* NightingaleTests.xctest */,
+				EE9811872A8BEF86007DD34F /* NightingaleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE98116E2A8BEF85007DD34F /* Nightingale */ = {
+			isa = PBXGroup;
+			children = (
+				EE98116F2A8BEF85007DD34F /* NightingaleApp.swift */,
+				EE9811712A8BEF85007DD34F /* ContentView.swift */,
+				EE9811A02A8C0D8A007DD34F /* RegisterView.swift */,
+				EE98119C2A8BF9AC007DD34F /* MusicProductionView.swift */,
+				EE9811A22A8C0E65007DD34F /* SignUpView.swift */,
+				EE9811A42A8C0E70007DD34F /* WelcomeView.swift */,
+				EE98119E2A8BF9C7007DD34F /* ProfileView.swift */,
+				EE98119A2A8BF53D007DD34F /* MusicLibraryView.swift */,
+				EE9811732A8BEF86007DD34F /* Assets.xcassets */,
+				EE9811752A8BEF86007DD34F /* Nightingale.entitlements */,
+				EE9811762A8BEF86007DD34F /* Preview Content */,
+			);
+			path = Nightingale;
+			sourceTree = "<group>";
+		};
+		EE9811762A8BEF86007DD34F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE9811772A8BEF86007DD34F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE9811802A8BEF86007DD34F /* NightingaleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE9811812A8BEF86007DD34F /* NightingaleTests.swift */,
+			);
+			path = NightingaleTests;
+			sourceTree = "<group>";
+		};
+		EE98118A2A8BEF86007DD34F /* NightingaleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE98118B2A8BEF86007DD34F /* NightingaleUITests.swift */,
+				EE98118D2A8BEF86007DD34F /* NightingaleUITestsLaunchTests.swift */,
+			);
+			path = NightingaleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE98116B2A8BEF85007DD34F /* Nightingale */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9811912A8BEF86007DD34F /* Build configuration list for PBXNativeTarget "Nightingale" */;
+			buildPhases = (
+				EE9811682A8BEF85007DD34F /* Sources */,
+				EE9811692A8BEF85007DD34F /* Frameworks */,
+				EE98116A2A8BEF85007DD34F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nightingale;
+			productName = Nightingale;
+			productReference = EE98116C2A8BEF85007DD34F /* Nightingale.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE98117C2A8BEF86007DD34F /* NightingaleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9811942A8BEF86007DD34F /* Build configuration list for PBXNativeTarget "NightingaleTests" */;
+			buildPhases = (
+				EE9811792A8BEF86007DD34F /* Sources */,
+				EE98117A2A8BEF86007DD34F /* Frameworks */,
+				EE98117B2A8BEF86007DD34F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE98117F2A8BEF86007DD34F /* PBXTargetDependency */,
+			);
+			name = NightingaleTests;
+			productName = NightingaleTests;
+			productReference = EE98117D2A8BEF86007DD34F /* NightingaleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE9811862A8BEF86007DD34F /* NightingaleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9811972A8BEF86007DD34F /* Build configuration list for PBXNativeTarget "NightingaleUITests" */;
+			buildPhases = (
+				EE9811832A8BEF86007DD34F /* Sources */,
+				EE9811842A8BEF86007DD34F /* Frameworks */,
+				EE9811852A8BEF86007DD34F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE9811892A8BEF86007DD34F /* PBXTargetDependency */,
+			);
+			name = NightingaleUITests;
+			productName = NightingaleUITests;
+			productReference = EE9811872A8BEF86007DD34F /* NightingaleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE9811642A8BEF85007DD34F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EE98116B2A8BEF85007DD34F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					EE98117C2A8BEF86007DD34F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = EE98116B2A8BEF85007DD34F;
+					};
+					EE9811862A8BEF86007DD34F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = EE98116B2A8BEF85007DD34F;
+					};
+				};
+			};
+			buildConfigurationList = EE9811672A8BEF85007DD34F /* Build configuration list for PBXProject "Nightingale" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE9811632A8BEF85007DD34F;
+			productRefGroup = EE98116D2A8BEF85007DD34F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE98116B2A8BEF85007DD34F /* Nightingale */,
+				EE98117C2A8BEF86007DD34F /* NightingaleTests */,
+				EE9811862A8BEF86007DD34F /* NightingaleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE98116A2A8BEF85007DD34F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9811782A8BEF86007DD34F /* Preview Assets.xcassets in Resources */,
+				EE9811742A8BEF86007DD34F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE98117B2A8BEF86007DD34F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9811852A8BEF86007DD34F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE9811682A8BEF85007DD34F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9811722A8BEF85007DD34F /* ContentView.swift in Sources */,
+				EE9811702A8BEF85007DD34F /* NightingaleApp.swift in Sources */,
+				EE98119F2A8BF9C7007DD34F /* ProfileView.swift in Sources */,
+				EE9811A52A8C0E70007DD34F /* WelcomeView.swift in Sources */,
+				EE9811A32A8C0E65007DD34F /* SignUpView.swift in Sources */,
+				EE9811A12A8C0D8A007DD34F /* RegisterView.swift in Sources */,
+				EE98119B2A8BF53D007DD34F /* MusicLibraryView.swift in Sources */,
+				EE98119D2A8BF9AC007DD34F /* MusicProductionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9811792A8BEF86007DD34F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9811822A8BEF86007DD34F /* NightingaleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9811832A8BEF86007DD34F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE98118C2A8BEF86007DD34F /* NightingaleUITests.swift in Sources */,
+				EE98118E2A8BEF86007DD34F /* NightingaleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE98117F2A8BEF86007DD34F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE98116B2A8BEF85007DD34F /* Nightingale */;
+			targetProxy = EE98117E2A8BEF86007DD34F /* PBXContainerItemProxy */;
+		};
+		EE9811892A8BEF86007DD34F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE98116B2A8BEF85007DD34F /* Nightingale */;
+			targetProxy = EE9811882A8BEF86007DD34F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE98118F2A8BEF86007DD34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE9811902A8BEF86007DD34F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EE9811922A8BEF86007DD34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Nightingale/Nightingale.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nightingale/Preview Content\"";
+				DEVELOPMENT_TEAM = K3C53W5Q8C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.Nightingale;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE9811932A8BEF86007DD34F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Nightingale/Nightingale.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nightingale/Preview Content\"";
+				DEVELOPMENT_TEAM = K3C53W5Q8C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.Nightingale;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE9811952A8BEF86007DD34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K3C53W5Q8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.NightingaleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nightingale.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nightingale";
+			};
+			name = Debug;
+		};
+		EE9811962A8BEF86007DD34F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K3C53W5Q8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.NightingaleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nightingale.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nightingale";
+			};
+			name = Release;
+		};
+		EE9811982A8BEF86007DD34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K3C53W5Q8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.NightingaleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nightingale;
+			};
+			name = Debug;
+		};
+		EE9811992A8BEF86007DD34F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K3C53W5Q8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.NightingaleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nightingale;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE9811672A8BEF85007DD34F /* Build configuration list for PBXProject "Nightingale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE98118F2A8BEF86007DD34F /* Debug */,
+				EE9811902A8BEF86007DD34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9811912A8BEF86007DD34F /* Build configuration list for PBXNativeTarget "Nightingale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9811922A8BEF86007DD34F /* Debug */,
+				EE9811932A8BEF86007DD34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9811942A8BEF86007DD34F /* Build configuration list for PBXNativeTarget "NightingaleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9811952A8BEF86007DD34F /* Debug */,
+				EE9811962A8BEF86007DD34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9811972A8BEF86007DD34F /* Build configuration list for PBXNativeTarget "NightingaleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9811982A8BEF86007DD34F /* Debug */,
+				EE9811992A8BEF86007DD34F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE9811642A8BEF85007DD34F /* Project object */;
+}
