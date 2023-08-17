@@ -64,6 +64,7 @@ struct ContentView: View {
                                 .shadow(radius: 10)
                         }
                     }
+                    
 //                    .frame(width: UIScreen.main.bounds.width, height: 120)
 //                .background(Color.black)
 //                .cornerRadius(15)
