@@ -73,7 +73,6 @@ struct RegisterView: View {
                         .foregroundColor(Color.white)
                         .cornerRadius(30)
                     }
-                    
                 }
                 .padding()
                 
