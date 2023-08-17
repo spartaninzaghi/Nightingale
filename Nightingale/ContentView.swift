@@ -26,9 +26,7 @@ struct ContentView: View {
                     HStack(alignment: .center, spacing: 6.0) {
                         NavigationLink(destination: MusicLibraryView()) {
                             Image(systemName: "music.note.house.fill")
-//                                .resizable()
-//                                .scaledToFit()
-//                                .imageScale(.small)
+                                .font(.system(size:50))
                                 .frame(width: 90, height: 90)
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
@@ -38,7 +36,7 @@ struct ContentView: View {
                         NavigationLink(destination: MusicLibraryView()) {
                             Image(systemName: "music.note.list")
 //                                .resizable()
-                                .imageScale(.small)
+                                .font(.system(size:50))
                                 .frame(width: 90, height: 90)
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
@@ -47,7 +45,7 @@ struct ContentView: View {
                         }
                         NavigationLink(destination: MusicProductionView()) {
                             Image(systemName: "music.mic")
-                                .imageScale(.large)
+                                .font(.system(size:50))
                                 .frame(width: 90, height: 90)
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
@@ -56,16 +54,16 @@ struct ContentView: View {
                         }
                         NavigationLink(destination: ProfileView()) {
                             Image(systemName: "person.crop.circle")
-                                .imageScale(.large)
+                                .font(.system(size:50))
                                 .frame(width: 90, height: 90)
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
                                 .cornerRadius(35)
                                 .shadow(radius: 10)
                         }
-                        Text("Testing ...")
+
                     }
-                    .frame(width: UIScreen.main.bounds.width, height: 120)
+                    .frame(width: 400, height: 120)
                     .background(Color.gray)
                     .offset(y: 360)
                 }
@@ -101,3 +99,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
