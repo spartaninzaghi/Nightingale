@@ -63,7 +63,7 @@ struct ContentView: View {
                         }
                     }
                     .frame(width: 400, height: 120)
-                    .background(Color.gray)
+                    .background(Color.black)
                     .offset(y: 360)
                 }
             }
