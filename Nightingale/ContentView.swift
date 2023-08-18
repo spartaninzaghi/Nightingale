@@ -61,7 +61,7 @@ struct ContentView: View {
                                 .cornerRadius(35)
                                 .shadow(radius: 10)
                         }
-                    }
+                    }w
                     .frame(width: 400, height: 120)
                     .background(Color.black)
                     .offset(y: 360)
