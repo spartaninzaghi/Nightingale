@@ -7,16 +7,24 @@
 
 import SwiftUI
 
-struct SignUpView: View {
-    
-    init() {
-        // Make the navigation bar transparent
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithTransparentBackground()
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().compactAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+struct CustomTextStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .frame(width: 300, height:60)
+            .background(Color.white)
+            .cornerRadius(20)
+            .shadow(radius: 10)
     }
+}
+
+extension View {
+    func customTextStyling() -> some View{
+        modifier(CustomTextStyle())
+    }
+}
+
+struct SignUpView: View {
     
     @State var username: String = ""
     @State var password: String = ""
@@ -40,41 +48,40 @@ struct SignUpView: View {
                     
                     TextField("Username", text: $username)
                         .autocapitalization(.none)
-                        .padding()
-                        .frame(width: 300, height:60)
-                        .background(Color.white)
-                        .cornerRadius(30)
-                        .shadow(radius: 10)
-                    
+                        .customTextStyling()
                     
                     SecureField("Password", text: $password)
-                        .padding()
-                        .frame(width: 300, height:60)
-                        .background(Color.white)
-                        .cornerRadius(30)
-                        .shadow(radius: 10)
+                        .customTextStyling()
                     
                     SecureField("Confirm Password", text: $confirm)
-                        .padding()
-                        .frame(width: 300, height:60)
-                        .background(Color.white)
-                        .cornerRadius(30)
-                        .shadow(radius: 10)
+                        .customTextStyling()
                     
                     let submit_btn = ZStack {
                         
                         Text("Submit")
-                            .font(.largeTitle)
-                            .frame(width: 200, height: 60)
+                            .font(.title2)
+                            .frame(width: 200, height: 50)
                             .foregroundColor(Color.white)
                             .background(Color.black)
-                            .cornerRadius(15)
+                            .cornerRadius(30)
                     }
                     
-                    let mismatch_txt = Text("Passwords do not match")
-                        .bold()
-                        .foregroundColor(.red)
-                    
+                    let mismatch_txt = ZStack{
+                        Rectangle()
+                            .background(Color.black)
+                            .frame(width: 220, height: 50)
+                            .cornerRadius(10)
+                            .blur(radius: 15)
+                        
+                            
+                        Text("Passwords do not match")
+                            .frame(width: 220, height: 50)
+                            .bold()
+                            .foregroundColor(.red)
+//                        .background(Color.black)
+                        
+                    }
+                                            
                     if !passwordsMatch {
                         mismatch_txt
                         submit_btn
@@ -93,31 +100,11 @@ struct SignUpView: View {
                                     .foregroundColor(Color.black)
                                     .background(Color.gray)
                                     .cornerRadius(15)
-                                
                             }
                         }
-                        
                     }
-                    
                 }
-                        
-    //                }
-    //                .frame(width: 90, height: 90)
-    //                .background(Color.clear)
-    //                .foregroundColor(Color.clear)
-    //                .cornerRadius(30)
-    //                .padding(151.0)
-                    
-                    
-                    
-                    
-                }
-            
-            //                    .multilineTextAlignment(.center)
-            
-            
-            
-            
+            }
         }
     }
     

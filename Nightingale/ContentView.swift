@@ -23,23 +23,14 @@ struct ContentView: View {
                         .imageScale(.medium)
                         .frame(width: 200, height: 200)
                     
-                    HStack(alignment: .center, spacing: 6.0) {
-                        NavigationLink(destination: MusicLibraryView()) {
-                            Image(systemName: "music.note.house.fill")
-                                .font(.system(size:50))
-                                .frame(width: 90, height: 90)
-                                .background(Color.white)
-                                .foregroundColor(Color.black)
-                                .cornerRadius(35)
-                                .shadow(radius: 10)
-                        }
+                    HStack(alignment: .center, spacing: 25.0) {
                         NavigationLink(destination: MusicLibraryView()) {
                             Image(systemName: "music.note.list")
 //                                .resizable()
                                 .font(.system(size:50))
                                 .frame(width: 90, height: 90)
-                                .background(Color.white)
-                                .foregroundColor(Color.black)
+                                .background(Color.clear)
+                                .foregroundColor(Color.white)
                                 .cornerRadius(35)
                                 .shadow(radius: 10)
                         }
@@ -47,8 +38,8 @@ struct ContentView: View {
                             Image(systemName: "music.mic")
                                 .font(.system(size:50))
                                 .frame(width: 90, height: 90)
-                                .background(Color.white)
-                                .foregroundColor(Color.black)
+                                .background(Color.clear)
+                                .foregroundColor(Color.white)
                                 .cornerRadius(35)
                                 .shadow(radius: 10)
                         }
@@ -56,14 +47,16 @@ struct ContentView: View {
                             Image(systemName: "person.crop.circle")
                                 .font(.system(size:50))
                                 .frame(width: 90, height: 90)
-                                .background(Color.white)
-                                .foregroundColor(Color.black)
+                                .background(Color.clear)
+                                .foregroundColor(Color.white)
                                 .cornerRadius(35)
                                 .shadow(radius: 10)
                         }
                     }
-                    .frame(width: 400, height: 120)
+                    .frame(width: 400, height: 100)
                     .background(Color.black)
+//                    .
+                    
                     .offset(y: 360)
                 }
             }

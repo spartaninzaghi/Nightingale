@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0D3C9D2A9527D4004FD252 /* VoiceRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D3C9C2A9527D4004FD252 /* VoiceRecorder.swift */; };
+		EE0D3C9F2A9534B4004FD252 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D3C9E2A9534B4004FD252 /* MainViewController.swift */; };
 		EE9811702A8BEF85007DD34F /* NightingaleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98116F2A8BEF85007DD34F /* NightingaleApp.swift */; };
 		EE9811722A8BEF85007DD34F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9811712A8BEF85007DD34F /* ContentView.swift */; };
 		EE9811742A8BEF86007DD34F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9811732A8BEF86007DD34F /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE0D3C9C2A9527D4004FD252 /* VoiceRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorder.swift; sourceTree = "<group>"; };
+		EE0D3C9E2A9534B4004FD252 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EE98116C2A8BEF85007DD34F /* Nightingale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nightingale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE98116F2A8BEF85007DD34F /* NightingaleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightingaleApp.swift; sourceTree = "<group>"; };
 		EE9811712A8BEF85007DD34F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,8 +113,10 @@
 			children = (
 				EE98116F2A8BEF85007DD34F /* NightingaleApp.swift */,
 				EE9811712A8BEF85007DD34F /* ContentView.swift */,
+				EE0D3C9E2A9534B4004FD252 /* MainViewController.swift */,
 				EE9811A02A8C0D8A007DD34F /* RegisterView.swift */,
 				EE98119C2A8BF9AC007DD34F /* MusicProductionView.swift */,
+				EE0D3C9C2A9527D4004FD252 /* VoiceRecorder.swift */,
 				EE9811A22A8C0E65007DD34F /* SignUpView.swift */,
 				EE9811A42A8C0E70007DD34F /* WelcomeView.swift */,
 				EE98119E2A8BF9C7007DD34F /* ProfileView.swift */,
@@ -285,6 +291,8 @@
 				EE9811A12A8C0D8A007DD34F /* RegisterView.swift in Sources */,
 				EE98119B2A8BF53D007DD34F /* MusicLibraryView.swift in Sources */,
 				EE98119D2A8BF9AC007DD34F /* MusicProductionView.swift in Sources */,
+				EE0D3C9D2A9527D4004FD252 /* VoiceRecorder.swift in Sources */,
+				EE0D3C9F2A9534B4004FD252 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
